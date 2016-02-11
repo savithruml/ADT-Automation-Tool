@@ -206,7 +206,7 @@ def login():
 	usr_name = str(request.form['username'])
 	usr_pass = str(request.form['password'])
 	
-	if usr_name == 'admin' and usr_pass == 'ChangeMe123':
+	if usr_name == '' and usr_pass == '':
 		return render_template('ipcomm.html')
 	else:
 		return render_template('loginfail.html')
