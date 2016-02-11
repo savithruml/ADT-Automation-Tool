@@ -48,7 +48,7 @@ def sftpUpload(grp_path):
 	try:
 		os.chdir(grp_path)
 		tmp = os.listdir(grp_path)
-		srv = pysftp.Connection(host="xfer.dncsolution.com", username="ADTDNE_ZetaInteractive2", password="#VK7JuB*}3W/S-3")
+		srv = pysftp.Connection(host="", username="", password="")
 
 		for file in tmp:
 			if file.endswith('.csv'):
@@ -63,7 +63,7 @@ def sftpUpload(grp_path):
 def sftpDownload(file_download):
 	
 	try:
-		srv = pysftp.Connection(host="xfer.dncsolution.com", username="ADTDNE_ZetaInteractive2", password="#VK7JuB*}3W/S-3") 
+		srv = pysftp.Connection(host="", username="", password=" 
 
 		while len(srv.listdir('/Inbox')) >= 1:
 			time.sleep(90)
