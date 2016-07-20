@@ -1,3 +1,5 @@
+#!/usr/bin/env
+
 from application import application
 
 if __name__=="__main__":
